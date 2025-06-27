@@ -51,7 +51,7 @@ public class SecurityConfig {
         http.csrf(customizer -> customizer.disable());
         http.cors(Customizer.withDefaults()); // Enable CORS with custom config
         http.authorizeHttpRequests(request -> request
-                .requestMatchers("user/register","user/login","api/products")
+                .requestMatchers("user/register","user/login","api/products","api/product/*/imagename")
                 .permitAll()
                 .anyRequest().authenticated());
 
