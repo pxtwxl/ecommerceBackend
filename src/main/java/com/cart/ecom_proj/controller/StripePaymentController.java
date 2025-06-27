@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
+
+@CrossOrigin()
 @RequestMapping("/api/payment")
 public class StripePaymentController {
+
+    @Value("${frontend.app.url}")
+    private String frontendAppUrl;
 
     public StripePaymentController(@Value("${stripe.secret.key}") String secretKey) {
         Stripe.apiKey = secretKey;
@@ -40,8 +45,8 @@ public class StripePaymentController {
         }
         SessionCreateParams params = SessionCreateParams.builder()
             .setMode(SessionCreateParams.Mode.PAYMENT)
-            .setSuccessUrl("http://localhost:5173/success")
-            .setCancelUrl("http://localhost:5173/cart")
+            .setSuccessUrl(frontendAppUrl + "/success")
+            .setCancelUrl(frontendAppUrl + "/cart")
             .addAllLineItem(lineItems)
             .build();
         Session session = Session.create(params);

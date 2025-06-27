@@ -66,7 +66,7 @@ public class ProductService {
         p1.setDescription("Latest Apple flagship phone");
         p1.setBrand("Apple");
         p1.setPrice(new BigDecimal("1199.99"));
-        p1.setCategory("Smartphones");
+        p1.setCategory("Mobile");
         p1.setReleaseDate(java.sql.Date.valueOf("2025-01-01"));
         p1.setProductAvailable(true);
         p1.setStockQuantity(50);
@@ -80,7 +80,7 @@ public class ProductService {
         p2.setDescription("Newest Samsung Galaxy series");
         p2.setBrand("Samsung");
         p2.setPrice(new BigDecimal("1099.99"));
-        p2.setCategory("Smartphones");
+        p2.setCategory("Mobile");
         p2.setReleaseDate(java.sql.Date.valueOf("2025-02-10"));
         p2.setProductAvailable(true);
         p2.setStockQuantity(40);
@@ -94,7 +94,7 @@ public class ProductService {
         p3.setDescription("Noise Cancelling Headphones");
         p3.setBrand("Sony");
         p3.setPrice(new BigDecimal("399.99"));
-        p3.setCategory("Headphones");
+        p3.setCategory("Headphone");
         p3.setReleaseDate(java.sql.Date.valueOf("2024-06-15"));
         p3.setProductAvailable(true);
         p3.setStockQuantity(100);
@@ -108,7 +108,7 @@ public class ProductService {
         p4.setDescription("13-inch Ultrabook Laptop");
         p4.setBrand("Dell");
         p4.setPrice(new BigDecimal("1499.99"));
-        p4.setCategory("Laptops");
+        p4.setCategory("Laptop");
         p4.setReleaseDate(java.sql.Date.valueOf("2023-11-20"));
         p4.setProductAvailable(true);
         p4.setStockQuantity(25);
@@ -122,7 +122,7 @@ public class ProductService {
         p5.setDescription("Smartwatch with health features");
         p5.setBrand("Apple");
         p5.setPrice(new BigDecimal("499.99"));
-        p5.setCategory("Wearables");
+        p5.setCategory("Fashion");
         p5.setReleaseDate(java.sql.Date.valueOf("2025-03-05"));
         p5.setProductAvailable(true);
         p5.setStockQuantity(75);
